@@ -1,2 +1,13 @@
 ---
-# defaults file for ansible-role-vim
+vim_group_name:     vagrant
+vim_username:       vagrant
+vim_user_home_path: '/home/{{ vim_username }}'
+vim_autoload_path:  '{{ vim_user_home_path }}/.vim/autoload'
+vim_bundle_path:    '{{ vim_user_home_path }}/.vim/bundle'
+vim_plugins:
+  - name: vim-sensible
+    git: git://github.com/tpope/vim-sensible.git
+  - name: vim-rails
+    git: git://github.com/tpope/vim-rails.git
+  - name: vim-bundler
+    git: git://github.com/tpope/vim-bundler.git
