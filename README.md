@@ -1,4 +1,4 @@
-Role Name
+Vim
 =========
 
 Role to setup vim.
